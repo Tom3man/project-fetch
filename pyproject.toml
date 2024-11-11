@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "project-fetch"
+version = "0.1.0"
+description = ""
+authors = ["Tom <tom.freeman@vodafone.com>"]
+readme = "README.md"
+packages = [{include = "project_fetch"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+streamlit = "^1.40.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
