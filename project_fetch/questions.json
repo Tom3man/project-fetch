@@ -1,7 +1,9 @@
 {
   "Q1": {
     "question_description": "Is it a Dog?",
-    "answers": ["Yes", "No"]
+    "answers": ["Yes", "No"],
+    "boolean": 1
+
   },
   "Q2": {
     "question_description": "Is the Dog inside or outside?",

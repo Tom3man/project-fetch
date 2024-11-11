@@ -1,20 +1,29 @@
 import streamlit as st
-from design import BooleanQuestion, MultipleChoiceSection
+import logging
+import warnings
+from datetime import datetime
+from typing import Optional
+import pandas as pd
+import click
+from utils import get_random_question
 from PIL import Image
-from utils import *
 
-# Set the page title
-st.title("Image Viewer with Yes/No Options")
+log = logging.getLogger(__name__)
 
-questions = ['What colour is the dog?', 'Is there a person present?']
+@click.command(
+    help="""Open the Streamlit Web App to Tag Images"""
+)
+@click.option("--images-path", type=click.STRING, required=False)
+def main(images_path: str = None):
 
-# Upload the image path
-image_path = "/Users/freemant/Repositories/Personal/project-fetch/data/tagged/labrador/images/n02099712_2897.jpg"
+    # Set the page title
+    st.title("Image Viewer with Yes/No Options")
 
-# Display the image
-try:
-    image = Image.open(image_path)
-    st.image(image, caption="Your Image", use_column_width=True)
-except FileNotFoundError:
-    st.error("Image not found. Please check the file path.")
+    # Display the image
+    try:
+        image = Image.open(images_path)
+        st.image(image, caption="Your Image", use_column_width=True)
+    except FileNotFoundError:
+        st.error("Image not found. Please check the file path.")
 
+    id, answers, question = get_random_question()
