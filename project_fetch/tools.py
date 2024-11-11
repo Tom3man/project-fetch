@@ -15,6 +15,7 @@ def with_database_connection(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         tag = TaggingDatabase(database_path=DATA_PATH)
+        tag.create_table(overwrite=False)
         try:
             return func(tag, *args, **kwargs)
         finally:
