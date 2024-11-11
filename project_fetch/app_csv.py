@@ -14,7 +14,6 @@ def load_local_files(
 ) -> Tuple[List[PosixPath], Dict[str, Dict[str, Union[str, List[str]]]]]:
     # Get a list of all images from local folder
     image_folder = F"{DATA_PATH}/tagged"
-    image_folder = "images"
     image_files = list(Path(image_folder).rglob("*.jpg"))
 
     # Open local config file
