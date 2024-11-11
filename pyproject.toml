@@ -7,9 +7,11 @@ readme = "README.md"
 packages = [{include = "project_fetch"}]
 
 [tool.poetry.dependencies]
+ipykernel = "^6.25.2"
 python = "^3.10"
 pandas = "^2.2.3"
 streamlit = "^1.40.0"
+sqlite_forge = {git = "https://github.com/Tom3man/sqlite-forge.git"}
 
 
 [build-system]

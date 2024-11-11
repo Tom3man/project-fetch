@@ -6,6 +6,7 @@ import sys
 
 MODULE_PATH = os.path.dirname(os.path.realpath(__file__))
 REPO_PATH = os.path.dirname(MODULE_PATH)
+DATA_PATH = f"{REPO_PATH}/data"
 
 # Configuring logs
 
