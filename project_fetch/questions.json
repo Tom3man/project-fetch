@@ -1,37 +1,37 @@
 {
-  "Q1": {
+  "1": {
     "question_description": "Is it a Dog?",
     "answers": ["Yes", "No"]
   },
-  "Q2": {
+  "2": {
     "question_description": "Is the Dog inside or outside?",
     "answers": ["Inside", "Outside"]
   },
-  "Q3": {
+  "3": {
     "question_description": "Is the dog hidden at all?",
     "answers": ["Yes", "No"]
   },
-  "Q4": {
+  "4": {
     "question_description": "What colour is the dog (primary colour)?",
     "answers": ["Yes", "No"]
   },
-  "Q5": {
+  "5": {
     "question_description": "Does the dog show examples of mutilation?",
     "answers": ["Yes", "No"]
   },
-  "Q6": {
+  "6": {
     "question_description": "What is the profile of the dog?",
     "answers": ["Sitting", "Standing", "Lying", "In motion"]
   },
-  "Q7": {
+  "7": {
     "question_description": "Is there a person in the picture?",
     "answers": ["Yes", "No"]
   },
-  "Q8": {
+  "8": {
     "question_description": "Is there a child in the picture (Below 18yrs old)?",
     "answers": ["Yes", "No"]
   },
-  "Q9": {
+  "9": {
     "question_description": "Are there other animals in the picture?",
     "answers": ["Yes", "No"]
   }
