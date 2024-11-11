@@ -12,6 +12,9 @@ pandas = "^2.2.3"
 streamlit = "^1.40.0"
 
 
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
