@@ -47,12 +47,12 @@ st.title(question_formatted)
 # Display the image
 try:
     image = Image.open(str(image_path))
-    st.image(image, use_container_width=True)
+    st.image(image)
 except FileNotFoundError:
     st.error("Image not found. Please check the file path.")
 
 # Build localised URL
-image_path_url = image_path.replace(DATA_PATH, "")
+image_path_url = str(image_path).replace(DATA_PATH, '')
 
 # Create side-by-side buttons dynamically
 response = None
