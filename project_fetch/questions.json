@@ -12,8 +12,8 @@
     "answers": ["Yes", "No"]
   },
   "4": {
-    "question_description": "What colour is the dog (primary colour)?",
-    "answers": ["Yes", "No"]
+    "question_description": "What is the primary colour of the dog?",
+    "answers": ["White", "Brown", "Black", "Blonde", "Other"]
   },
   "5": {
     "question_description": "Does the dog show examples of mutilation?",
@@ -28,7 +28,7 @@
     "answers": ["Yes", "No"]
   },
   "8": {
-    "question_description": "Is there a child in the picture (Below 18yrs old)?",
+    "question_description": "Is there a child in the picture?",
     "answers": ["Yes", "No"]
   },
   "9": {
